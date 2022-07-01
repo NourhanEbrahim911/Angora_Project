@@ -1,0 +1,197 @@
+.move{
+   width: 50px;
+   height: 50px;
+   top:200px;
+}
+.btnn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 300px;
+}
+.carousel-control-next{
+    margin-top : calc( 300px + 50px)
+}
+.carousel-caption h5{
+    font-size: 100px;
+    margin-top: -400px;
+}
+h4{
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+h4::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top:102px;
+    left: 47.5%;
+}
+.sec2{
+    text-align: center;
+}
+.sec3{
+    text-align: center;
+}
+.sec5{
+    text-align: center;
+}
+.progress{
+    height: 5px;
+}
+.sec2 label{
+  width: 100%;
+  text-align: left;
+}
+
+.progress-bar{
+        animation-name: Prog;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+}
+.sec3 .parent{
+    position: relative;
+    overflow: hidden;
+}
+.sec3 img{
+    position: relative;
+    z-index:1;
+}
+.sec3 .cover{
+      width: 100%;
+      height: 100%;
+      background-color:rgba(242, 84, 84, 0.85);;
+      position: absolute; 
+      top:0%; 
+      opacity: 0.9;
+}
+.sec3 .card:hover .cover{
+   z-index: 2;
+} 
+.sec3 .card:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s ease ;
+}
+.sec4 .btn:hover{
+    opacity: 0.8;
+}
+
+.sec7 .btn:hover{
+    opacity: 0.8;
+}
+.carousel-indicators [data-bs-target] {
+     width: 200px;
+     height: 200px;
+     background-color: transparent;
+     text-indent: 0%; /*da override l bootstap 3l4an amn3 7war eno rl content ytrme fl left kda */
+     position: static;
+     margin-right: 20px;
+   
+}
+.carousel-indicators .active{
+    transform: scale(1.1);
+}
+.carousel-indicators img{
+    border-radius: 50%;
+}
+.sec5 h5:hover{
+    color: tomato;
+}
+.sec7 h5:hover{
+    color: tomato;
+}
+.sec7 input:focus{
+    border-color: tomato;
+}
+.sec7 textarea:focus{
+    border-color: tomato;
+}
+.sec8{
+    position: relative;
+}
+.sec8 .arrow{
+    position: absolute;
+    top: -5%;
+    left: 48.5%;
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec8 a{
+    color: rgb(185, 179, 179);
+}
+.sec8 p{
+    color: rgb(185, 179, 179);
+}
+.sec8 a:hover{
+    color: tomato;
+}
+.nav-item:hover .text-light{
+    --bs-text-opacity: 1;
+    color:tomato !important;
+} 
+.scrolling{
+padding-bottom: 12px;
+background-color: rgb(204, 200, 200);
+}
+@media (min-width: 992px){
+.ps-lg-5 {
+    padding-left: 1 !important;
+}
+}
+@media (min-width: 992px){
+.pe-lg-5 {
+    padding-right: 1 !important;
+}
+}
+@media (max-width: 990px){
+    .color{
+       background-color:white;
+    }  
+    .carousel-caption h5{
+        font-size: 50px;
+    }
+    .text-light {
+        --bs-text-opacity: ;
+        /* color: rgba(var(--bs-light-rgb),var(--bs-text-opacity))!important; */
+    }
+}
+
+@media (min-width: 990px){
+    .carousel-caption h5{
+        position:absolute;
+        transform: translateX(300%);
+        color: transparent; 
+        animation-name: moving;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s; 
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes moving{
+
+    0%{ 
+        color: white; 
+        transform: translateX(300%);
+    }
+    100%{
+       color: white;
+       transform: translateX(50%);
+    }
+}
+@keyframes Prog {
+    0%{
+        width: 0%;
+
+    }
+}
+    
